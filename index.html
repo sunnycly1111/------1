@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>i-dle｜成員與作品介紹</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+        color: #242024;
+        background: #f8f5f7;
+        line-height: 1.8;
+      }
+      header {
+        min-height: 78vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 60px 20px;
+        color: white;
+        background:
+          linear-gradient(rgba(45, 25, 45, 0.48), rgba(45, 25, 45, 0.62)),
+          url("https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1800&q=80")
+            center/cover;
+      }
+      header h1 {
+        font-size: clamp(3rem, 9vw, 7rem);
+        margin: 0;
+        letter-spacing: 0.08em;
+      }
+      header p {
+        font-size: 1.15rem;
+        margin: 10px auto 28px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 24px;
+        border-radius: 30px;
+        background: white;
+        color: #5c315b;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.94);
+        backdrop-filter: blur(10px);
+        padding: 12px;
+        text-align: center;
+        box-shadow: 0 2px 12px #0001;
+      }
+      nav a {
+        color: #4f354e;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+      main {
+        max-width: 1100px;
+        margin: auto;
+        padding: 65px 20px;
+      }
+      section {
+        margin-bottom: 75px;
+      }
+      .title {
+        text-align: center;
+        margin-bottom: 35px;
+      }
+      .title h2 {
+        font-size: 2.1rem;
+        margin-bottom: 5px;
+      }
+      .title p {
+        color: #8a7185;
+      }
+      .intro {
+        max-width: 850px;
+        margin: auto;
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 8px 25px #6b496b18;
+      }
+      .members {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+      }
+      .card {
+        overflow: hidden;
+        background: white;
+        border-radius: 18px;
+        box-shadow: 0 8px 25px #6b496b18;
+        transition: transform 0.25s;
+      }
+      .card:hover {
+        transform: translateY(-7px);
+      }
+      .card img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+      }
+      .card div {
+        padding: 17px;
+      }
+      .card h3 {
+        margin: 0 0 3px;
+      }
+      .works {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 20px;
+      }
+      .work {
+        background: #30232f;
+        color: white;
+        border-radius: 18px;
+        padding: 25px;
+        min-height: 175px;
+      }
+      .work span {
+        color: #e8bddf;
+        font-size: 0.9rem;
+      }
+      .video {
+        position: relative;
+        padding-top: 56.25%;
+        border-radius: 18px;
+        overflow: hidden;
+      }
+      .video iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+      .map {
+        border: 0;
+        width: 100%;
+        height: 380px;
+        border-radius: 18px;
+      }
+      footer {
+        text-align: center;
+        padding: 30px;
+        background: #30232f;
+        color: #ddd;
+      }
+      @media (max-width: 600px) {
+        nav a {
+          margin: 0 6px;
+          font-size: 0.9rem;
+        }
+        header {
+          min-height: 65vh;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <p>MY FAVORITE K-POP GIRL GROUP</p>
+        <h1>i-dle</h1>
+        <p>MIYEON · MINNIE · SOYEON · YUQI · SHUHUA</p>
+        <a class="btn" href="#members">認識成員</a>
+      </div>
+    </header>
+
+    <nav>
+      <a href="#about">關於 i-dle</a>
+      <a href="#members">成員</a>
+      <a href="#works">作品</a>
+      <a href="#video">影片</a>
+      <a href="#map">地圖</a>
+    </nav>
+
+    <main>
+      <section id="about">
+        <div class="title">
+          <h2>關於 i-dle</h2>
+          <p>從 (G)I-DLE 到 i-dle 的全新篇章</p>
+        </div>
+        <div class="intro">
+          <p>
+            i-dle（아이들）是韓國 Cube Entertainment
+            旗下的五人女子團體，由薇娟（MIYEON）、
+            Minnie（MINNIE）、小娟（SOYEON）、雨琦（YUQI）與舒華（SHUHUA）組成。
+            團體於 2018
+            年以《LATATA》正式出道，之後以鮮明的音樂概念、強烈的舞台風格與
+            成員參與創作而受到許多樂迷喜愛。她們的作品經常把自我認同、自信、愛情與成長
+            融入流行音樂之中，從《TOMBOY》、《Nxde》到《Queencard》，每次回歸都能展現
+            不同面貌。2025 年迎來出道七週年時，團名由 (G)I-DLE 正式改為
+            i-dle，象徵
+            團體進入新的階段。近年除了團體活動，成員也各自發展個人音樂作品，讓五位成員
+            的特色更加鮮明。對許多 Neverland 而言，i-dle
+            最吸引人的地方不只是歌曲好聽，
+            更是她們在作品中傳達「做自己」的態度，以及五位成員各自不同卻能互相融合的魅力。
+          </p>
+        </div>
+      </section>
+
+      <section id="members">
+        <div class="title">
+          <h2>Members</h2>
+          <p>五位成員，各自閃耀</p>
+        </div>
+        <div class="members">
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=700&q=80"
+              alt="MIYEON"
+            />
+            <div>
+              <h3>MIYEON｜薇娟</h3>
+              <p>主唱 · 清澈而溫柔的歌聲</p>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=700&q=80"
+              alt="MINNIE"
+            />
+            <div>
+              <h3>MINNIE｜Minnie</h3>
+              <p>主唱 · 迷人的音色與夢幻氣質</p>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=700&q=80"
+              alt="SOYEON"
+            />
+            <div>
+              <h3>SOYEON｜小娟</h3>
+              <p>隊長 · 創作與製作核心</p>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=80"
+              alt="YUQI"
+            />
+            <div>
+              <h3>YUQI｜雨琦</h3>
+              <p>歌手 · 低沉特色嗓音與活潑魅力</p>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?auto=format&fit=crop&w=700&q=80"
+              alt="SHUHUA"
+            />
+            <div>
+              <h3>SHUHUA｜舒華</h3>
+              <p>成員 · 自然率真的舞台魅力</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="works">
+        <div class="title">
+          <h2>代表作品</h2>
+          <p>從經典歌曲到近年的作品</p>
+        </div>
+        <div class="works">
+          <div class="work">
+            <span>2018</span>
+            <h3>LATATA</h3>
+            <p>出道作品，建立團體獨特的音樂色彩。</p>
+          </div>
+          <div class="work">
+            <span>2022</span>
+            <h3>TOMBOY</h3>
+            <p>以強烈的風格與自我主張受到廣泛關注。</p>
+          </div>
+          <div class="work">
+            <span>2022</span>
+            <h3>Nxde</h3>
+            <p>以復古概念重新詮釋「美」與自我表達。</p>
+          </div>
+          <div class="work">
+            <span>2023</span>
+            <h3>Queencard</h3>
+            <p>用輕快旋律傳達自信與自我肯定。</p>
+          </div>
+          <div class="work">
+            <span>2024</span>
+            <h3>I SWAY</h3>
+            <p>收錄〈Klaxon〉等歌曲，展現夏日風格。</p>
+          </div>
+          <div class="work">
+            <span>2026</span>
+            <h3>We made</h3>
+            <p>延續 i-dle 全新階段的團體音樂作品。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="video">
+        <div class="title">
+          <h2>Music Video</h2>
+          <p>嵌入官方 YouTube：Queencard</p>
+        </div>
+        <div class="video">
+          <iframe
+            src="https://www.youtube.com/embed/7HDeem-JaSY"
+            title="i-dle Queencard Official Music Video"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </section>
+
+      <section id="map">
+        <div class="title">
+          <h2>Location</h2>
+          <p>Cube Entertainment｜韓國首爾</p>
+        </div>
+        <iframe
+          class="map"
+          src="https://www.google.com/maps?q=CUBE+Entertainment,+Seoul,+South+Korea&output=embed"
+          loading="lazy"
+          allowfullscreen
+        >
+        </iframe>
+      </section>
+    </main>
+
+    <footer>
+      <p>i-dle Fan Website · For school project / personal learning</p>
+    </footer>
+  </body>
+</html>
